@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color:bisque;
+            width:100vw; height:100vh;
+            border: solid black 5px;
+        }
+        .box{
+            height:150px;
+            width: 300px;
+            background-color: red;
+            margin: 8px;
+            padding:4px;
+             text-align: center;
+            border-radius: 30px;
+            position:relative;
+            animation-name: rightMovement;
+            animation-delay: 1s;
+            animation-duration:5s;
+            animation-iteration-count:1;
+            animation-fill-mode: forwards; 
+            /* short hand notation of animations
+            animation: forwards 2s 4 rightMovement 10s; */
+        }
+        @keyframes rightMovement{
+            from{
+                     top: 0;
+                     left: 0;
+
+            }
+            to{
+                 top:0;
+                 left:1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, molestiae cupiditate neque accusamus eligendi dolor unde, officia quos sapiente nam architecto.
+             </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>HTML DUMMMY FORM</legend>
+            <label for="email_id">EMAIL_ID:</label>
+        <input type="text" id="email_id" placeholder="abcd@example.com">
+        <br/>
+        <br/>
+        <label for="password">PASSWORD:</label>
+        <input type="password" id="password" placeholder="enter your password">
+        <br/>
+        <br/>
+       <label for="gender">male</label>
+       <input type="checkbox" id="gender">
+       <br/>
+       <br/>
+       <label for="datepicker">DATE</label>
+       <input type="date" id="datepicker">
+       <br/>
+       <br/>
+          <!-- to create dropdown -->
+          <label for="foods">choose food:</label>
+          <!-- multiple used to select multiple options . -->
+            <select name="dishes" id="foods" multiple>
+            <option value="maggie">maggie</option>
+            <option value="chips">chips</option>
+            <option value="lays">lays</option>
+        </select>
+      <br/>
+      <br/>
+           <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="enter text here....."></textarea>
+      <br/>
+      <br/>
+            <input type="submit" value="click here for submit">
+        <!-- OR <button>submit</submit> -->
+        </fieldset>
+        <br/>
+        <br/> 
+        <!-- this is good practice -->
+        <fieldset>
+            <legend>some input tags</legend>
+          <label for="textfield">TEXT_FIELD:</label>
+          <input type="text" name="textfield" id="textfield" placeholder="enter your text">
+           <br/>
+           <br/>
+          <!-- create radio button -->
+          <p style="display: inline;">Please select only one:</p>
+           <label for="new_gender 1">MALE:</label>
+           <input type="radio" name="radio" id="new_gender 1">
+            <!-- <br/>
+            <br/> -->
+           <label for="new_gender 2">FEMALE:</label>
+           <input type="radio" name="radio" id="new_gender 2">
+            <!-- <br/>
+            <br/> -->
+           <label for="new_gender 3">OTHERS:</label>
+           <input type="radio" name="radio" id="new_gender 3">
+           <br/>
+           <br/>
+           <!-- for choose file something -->
+           <label for="file">Upload:</label>
+           <input type="file" name="file_choosen" id="file">
+           <br/>
+           <br/>
+           <!-- create image as a button -->
+           <input type="image" name="img" id="img" alt="click here" src="ramji.jpg" 
+           height="100px" width="100px">
+        </fieldset>
+    </form>
+  
+</body>
+</html> 

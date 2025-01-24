@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+             border: 3px solid blue;
+             /* this overflow maintains the border line again; */
+             overflow: hidden;
+        }
+        .item{
+            background-color: aqua;
+            border: 2px solid black;
+            height:100px;
+            width:100px;
+            float:left;
+            /* clear:left; */
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="item">A</div>
+       <div class="item">B</div>
+       <div class="item">C</div>
+    </div>
+</body>
+</html>

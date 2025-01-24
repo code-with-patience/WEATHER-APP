@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT SADOWS</title>
+    <style>
+        :root{
+            --primary-color:red;
+            --custom-height: 650px;
+        }
+        .container{
+             background-color: beige;
+             border: 5px solid black;
+             height:var( --custom-height);
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            width:400px;height:300px;
+            border:solid black 1px;
+            margin:10px;
+             padding: 10px;
+        }
+        #id1{
+            text-shadow: 9px 11px 2px blue;
+            /* multiple text shadows adding */
+            text-shadow: 2px 2px aqua, 3px 3px black, 4px 4px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box">
+        <img src="code.jpeg" alt="click here">
+        <h2 id="id1">WELCOME TO CODING DUNIYA</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus, modi dicta voluptatum beatae molestiae delectus dolores in quas ut corporis, magni ad alias omnis?</p>
+      </div>
+    </div>
+</body>
+</html>

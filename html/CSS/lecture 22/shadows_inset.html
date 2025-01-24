@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SADOWS 2</title>
+    <style>
+        :root{
+            --primary-color:red;
+            --custom-height: 650px;
+        }
+        .container{
+             background-color: beige;
+             border: 5px solid black;
+             height:var( --custom-height);
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            width:400px;height:300px;
+            border:solid black 1px;
+            margin:10px;
+             padding: 10px;
+             /* shadows inset not outset */
+             /* box-shadow:inset 10px 12px  blue; */
+
+             /* multiple shadows; */
+             box-shadow: 10px 15px blue,19px 17px var( --primary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box">
+        <img src="code.jpeg" alt="click here">
+        <h2>WELCOME TO CODING DUNIYA</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus, modi dicta voluptatum beatae molestiae delectus dolores in quas ut corporis, magni ad alias omnis?</p>
+      </div>
+    </div>
+</body>
+</html>

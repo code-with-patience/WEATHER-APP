@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSITIONS</title>
+    <style>
+        .container{
+            background-color:bisque;
+            border:4px solid red;
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+            /* transitions property */
+
+            /* this is only for width */
+            /* transition-property: width ; */
+
+            /* transition-property: all;
+            transition-duration: 6s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in-out; */
+             
+            /* transition: height 4s ,width 8s  linear; */
+
+            /* short hand notation */
+            transition:all 6s 2s linear;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container:hover{
+            width:600px;
+            height:600px;
+            background-color: aqua;
+            rotate:360deg;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>JAI SHREE RAM</p>
+    </div>
+</body>
+</html>

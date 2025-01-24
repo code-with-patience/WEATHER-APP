@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color:bisque;
+            width:100vw; height:100vh;
+            border: solid black 5px;
+        }
+        /* first box */
+        .box{
+            height:150px;
+            width: 300px;
+            background-color: red;
+            margin: 8px;
+            padding:4px;
+             text-align: center;
+            border-radius: 30px;
+            position:relative; 
+            animation: forwards 15s 40 rightMovement 2s;
+        }
+        @keyframes rightMovement{
+            from{
+                     top: 0;
+                     left: 0;
+            }
+            to{
+                 top:0;
+                 left:1200px;
+            }
+        }
+        /* second box; */
+        #id1{
+            height:150px;
+            width: 300px;
+            background-color: red;
+            margin: 8px;
+            padding:4px;
+             text-align: center;
+            border-radius: 30px;
+            position:relative; 
+            animation: forwards 10s 40 leftMovement 1s ease-in;
+        }
+        @keyframes leftMovement{
+            from{
+                     top: 300px;
+                     left: 1200px;
+            }
+            to{
+                 top:300px;
+                 left:0px;
+            }
+        }
+        .circle{
+            border-radius: 150px;
+            border: solid 1px aqua;
+            position: relative;
+            top:160px;
+            left:47%;
+            background-color: aqua;
+            height:70px;
+            width: 70px;
+            position:relative; 
+            animation: forwards 10s infinite circleMovement running 3s ease-in alternate;
+        }
+        @keyframes circleMovement{
+             0%{
+                 top:0;
+                 left:25%;
+             }
+             /* it means when 25% of animations complete */
+             25%{
+                top:0;
+                 left:40%;
+             }
+             75%{
+                    top:10%;
+                    left:70%
+             }
+             100%{
+                   top:40%;
+                   left:80%;
+             }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, molestiae cupiditate neque accusamus eligendi dolor unde, officia quos sapiente nam architecto.
+             </p>
+        </div>
+        <div class="circle">
+
+        </div>
+        <div id="id1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, voluptate!</p>
+        </div>
+    </div>
+</body>
+</html>

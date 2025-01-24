@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIGN ITEMS</title>
+    <link rel="shortcut icon" href="flex_terms.png" type="image/x-icon">
+    <style>
+        .container{
+            background-color: bisque;
+            border: 2px solid blue;
+            display: flex;
+             flex-direction:row;
+            /* flex-wrap: wrap;  */
+            /* flex-flow: row wrap; */
+            justify-content:center;
+             align-items:center; 
+            align-content:end;
+            height: 1200px;
+            overflow: auto;
+        }
+         .box{
+               margin:1px;
+               padding:1px;
+               height:100px;
+               width:100px;
+               border: 1px solid black;
+               
+       }
+       
+       #item1{
+             background-color: aqua;  
+             /* order: 2; */
+             /* flex-grow: 1; */
+
+             align-self: 100px;
+       }
+       #item2{
+             background-color:blue;  
+             /* flex-grow: 1; */
+             flex-basis: 500px;
+       }
+       #item3{
+             background-color:blueviolet;  
+               /* 4 times shrink and grows more */
+               flex-shrink:80;
+               /* flex-grow: 1; */
+       }
+       #item4{
+             background-color:brown;  
+             order:-1;
+             /* flex-grow: 4; */
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="item1">BOX 1</div>
+        <div class="box" id="item2">BOX 2</div>
+        <div class="box" id="item3">BOX 3</div>
+        <div class="box" id="item4">BOX 4</div>
+     </div>
+</body>
+</html>

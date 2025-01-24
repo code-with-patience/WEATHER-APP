@@ -1,0 +1,130 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+    background-color: bisque;
+    border:4px solid black;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.box1{
+    background-color: #d9afd9;
+    background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+    height:100px;
+    margin:4px;
+   overflow-x: none;;
+}
+h1{
+font-size: 40px;
+color: red;
+display: flex;
+justify-content: center;
+padding:10px;
+}
+h2{
+    font-size: 60px;
+    color: crimson;
+    padding-right: 10px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap:15px;
+    font-size: 20px;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.boxleft{
+    padding:30px;
+    gap:px;
+}
+.box2{
+    border:1px black solid;
+     width:70%;
+     /* height:20%; */
+    background-image: linear-gradient( 129.1deg,  rgba(243,199,83,1) 26.8%, rgba(18,235,207,1) 114.1% );
+    box-shadow: 3px 3px 20px blue;
+}
+main{
+    display:flex;
+    justify-content: center;
+}
+img{
+    margin-top:100px ;
+    height:250px;
+    width: 200px;
+    border-radius: 20px;
+    margin-right:25px;
+   box-shadow:3px 4px 2px 5px white;
+   transition: all 1s 0s linear;
+}
+.boxright img:hover{
+    /* width:220px; */
+    transform: scale(1.1);
+}
+.item1{
+    display: flex;
+    flex-direction:row;
+}
+.item2{
+    display: flex;
+    flex-direction:row;
+}
+.item3{
+    display: flex;
+    flex-direction:row;
+}
+.footcontent{
+    background-color: #d9afd9;
+    background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    margin:2px;
+}
+.item1{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.item2{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.item3{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+@media (max-width:773px) {
+   .boxright{
+      margin-left: 10px;
+      margin-bottom: 20px;
+   }
+}
+@media (min-width:773px) {
+    .item1{
+        display: flex;
+        flex-direction: row;
+    } 
+    .item2{
+        display: flex;
+        flex-direction: row;
+    } 
+    .item3{
+        display: flex;
+        flex-direction: row;
+    } 
+}
+
+
+a:hover{
+  color: gray;
+}
